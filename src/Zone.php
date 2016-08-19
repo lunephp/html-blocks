@@ -66,7 +66,6 @@ class Zone implements ZoneInterface
 
     public function render():string
     {
-        var_dump($this);
         if (is_null($this->cache)) {
             $content = array_map(function ($block) {
                 return $block->render();
